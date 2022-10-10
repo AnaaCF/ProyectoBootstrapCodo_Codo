@@ -20,10 +20,10 @@
                 </ul> 
             </div>          
                           
-            <div class="col"> 
-                <input type="text">
-                <button type="submit">Buscar</button>
-            </div>
+            <form class="well form-search col">
+                <input type="text" class="input-medium search-query">                 
+                <button type="serch" class="btn btn-primary">Buscar</button>                 
+            </form>
         </div>         
     </header>
     <br>
@@ -49,24 +49,22 @@
         </div>       
     </div>
 
-   <div class="container">
-        <form action="">
-            <div>
-                <label for="email">Email</label>
-            
-                <input type="email" class="form-control" >
-                <p class="card-text"><small class="text-muted">No comparta nunca su mail</small></p>
-            </div>
-            <div>
-                <label for="email">Contraseña</label>
-                <input type="password" class="form-control" >
-            </div>
-            <br>
-            <div>
-                <button type="submit" >Enviar</button>
-            </div>        
-        </form>
-   </div> 
+    <form class="container">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Nunca comparta su mail</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Verificar</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
 
 
    
